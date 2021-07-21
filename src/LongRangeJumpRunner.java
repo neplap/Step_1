@@ -1,6 +1,6 @@
-public class longRangeJumpRunner extends LongRangeRunner implements Jump{
+public class LongRangeJumpRunner extends LongRangeRunner implements Jump{
 
-    public longRangeJumpRunner(int longRange) {
+    public LongRangeJumpRunner(int longRange) {
         super(longRange);
     }
 
