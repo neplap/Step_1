@@ -1,5 +1,5 @@
 public interface Run {
+    boolean run();
 
-    void run();
 
 }

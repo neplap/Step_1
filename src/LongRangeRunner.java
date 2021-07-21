@@ -9,8 +9,12 @@ public class LongRangeRunner extends Runner{
         return longRange;
     }
 
+
+
+
     @Override
-    public void run() {
+    public boolean run() {
         System.out.println("Теперь бежим вот такое расстояние: " + longRange );
+        return false;
     }
 }

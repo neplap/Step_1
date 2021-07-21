@@ -2,9 +2,16 @@
 
 public abstract class Runner implements Run{
 
+    protected int timeInSecond;
 
-        public void run () {
-            System.out.println("Бежим значит типо");
+    public abstract SportType getSportType();
+
+
+
+
+
+    public boolean run () {
+            return false;
         }
 }
 
