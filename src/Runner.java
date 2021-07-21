@@ -3,7 +3,7 @@
 public abstract class Runner implements Run{
 
 
-        public void getRun () {
+        public void run () {
             System.out.println("Бежим значит типо");
         }
 }
