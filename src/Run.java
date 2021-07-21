@@ -1,6 +1,5 @@
 public interface Run {
 
-    static void run() {
-
-    }
+    void run();
+    
 }

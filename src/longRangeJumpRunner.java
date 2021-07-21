@@ -4,10 +4,9 @@ public class longRangeJumpRunner extends LongRangeRunner implements Jump{
         super(longRange);
     }
 
+
     @Override
-    public void getRun() {
-        super.getRun();
+    public void jump() {
         System.out.println("Теперь прыгаем");
     }
-
 }

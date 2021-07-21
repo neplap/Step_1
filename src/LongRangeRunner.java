@@ -1,5 +1,5 @@
 public class LongRangeRunner extends Runner{
-    private int longRange;
+    int longRange;
 
     public LongRangeRunner(int longRange) {
         this.longRange = longRange;
@@ -8,9 +8,9 @@ public class LongRangeRunner extends Runner{
     public int getLongRange() {
         return longRange;
     }
+
     @Override
-    public void getRun() {
-        super.getRun();
+    public void run() {
         System.out.println("Теперь бежим вот такое расстояние: " + longRange );
     }
 }
