@@ -1,5 +1,5 @@
 public class CircleRunner extends Runner {
-   public int lap;
+   protected int lap;
 
     public CircleRunner(int lap) {
         this.lap = lap;

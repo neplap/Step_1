@@ -1,5 +1,5 @@
 public class LongRangeRunner extends Runner{
-    int longRange;
+    protected int longRange;
 
     public LongRangeRunner(int longRange) {
         this.longRange = longRange;
