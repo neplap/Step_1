@@ -12,23 +12,18 @@ public class CircleRunner extends Runner {
     }
 
 
+
     @Override
     public SportType getSportType() {
-        return SportType;
+        return getSportType();
     }
 
     @Override
     public boolean run() {
-        System.out.println("Time: " + timeInSecond + ", Lap in second: " + lapInSecond + ", Amount lap: " + amountLap);
+        System.out.println("Time: " + time + ", Lap in second: " + lapInSecond + ", Amount lap: " + amountLap);
         return false;
     }
-    //возвращает результат вычислений (успеет ли Х за timeInSecond пробежать amountLap за lapInSecond
-   //public
 
-    //переопределенный, публичный, "получить тип", возвращает тип
-    public String getSportType(String SportType) {
-        return SportType;
-    }
 
 }
 

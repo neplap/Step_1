@@ -1,6 +1,6 @@
 public interface Jump {
 
-    void jump();
+    boolean jump();
 
 
 }

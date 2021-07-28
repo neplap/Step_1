@@ -1,20 +1,31 @@
-public class LongRangeRunner extends Runner{
+public class LongRangeRunner extends Runner {
     protected int longRange;
+    protected int meterInSecond;
+    protected int longRangeInMeter;
 
-    public LongRangeRunner(int longRange) {
+
+    public LongRangeRunner(int longRange, int meterInSecond, int longRangeInMeter) {
         this.longRange = longRange;
+        this.meterInSecond = meterInSecond;
+        this.longRangeInMeter = longRangeInMeter;
     }
-
-    public int getLongRange() {
-        return longRange;
-    }
-
-
 
 
     @Override
     public boolean run() {
-        System.out.println("Теперь бежим вот такое расстояние: " + longRange );
+        System.out.println("Time in second: " + time + ". Meter in second: " + meterInSecond + ". Long range in meter: " + longRangeInMeter);
+        int result1 = longRangeInMeter / meterInSecond;
+        if (result1 <= time) {
+            System.out.println("Успел! " + result1 + "sec" + "<=" + time + "sec");
+        } else {
+            System.out.println("Не успел! " + result1 + "sec" + ">=" + time + "sec");
+        }
+        System.out.println();
         return false;
+    }
+
+    @Override
+    public SportType getSportType() {
+        return getSportType();
     }
 }

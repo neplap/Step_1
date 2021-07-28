@@ -2,17 +2,10 @@
 
 public abstract class Runner implements Run{
 
-    protected int timeInSecond;
+    protected int time;
 
     public abstract SportType getSportType();
 
-
-
-
-
-    public boolean run () {
-            return false;
-        }
 }
 
 
