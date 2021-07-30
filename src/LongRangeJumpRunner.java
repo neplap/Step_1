@@ -4,13 +4,13 @@ public class LongRangeJumpRunner extends LongRangeRunner implements Jump {
     protected int amountBarriers;
 
 
-    public LongRangeJumpRunner(int longRange, int meterInSecond, int longRangeInMeter) {
-        super(longRange, meterInSecond, longRangeInMeter);
+    public LongRangeJumpRunner(int time, int meterInSecond, int longRangeInMeter) {
+        super(time, meterInSecond, longRangeInMeter);
 
     }
 
     public boolean run() {
-        return false;
+    return true;
     }
 
 
@@ -19,17 +19,16 @@ public class LongRangeJumpRunner extends LongRangeRunner implements Jump {
         System.out.println("Time: " + time + ". barrier In Second: " + barrierInSecond + ". Amount Barriers: " + amountBarriers);
         int result2 = amountBarriers / barrierInSecond;
         if (result2 <= time) {
-            System.out.println("Успел! " + result2 + "sec" + "<=" + time + "sec");
+            return true;
         } else {
-            System.out.println("Не успел! " + result2 + "sec" + ">=" + time + "sec");
+            return false;
         }
-        System.out.println();
-        return false;
+
     }
 
     @Override
     public SportType getSportType() {
-        return getSportType();
+        return SportType.LONG_RANGE_JUMP_RUNNER;
     }
 
 }

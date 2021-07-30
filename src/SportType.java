@@ -1,6 +1,5 @@
 public enum SportType {
     CIRCLE_RUNNER,
     LONG_RANGE_JUMP_RUNNER,
-    LONG_RANGE_RUNNER,
-    RUNNER
+    LONG_RANGE_RUNNER
 }

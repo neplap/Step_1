@@ -1,32 +1,33 @@
 public class CircleRunner extends Runner {
-    protected int lap;
+
     protected int lapInSecond;
     protected int amountLap;
 
 
-    public CircleRunner(int lap, int lapInSecond, int amountLap) {
-        super();
-        this.lap = lap;
+    public CircleRunner(int lapInSecond, int amountLap, int time) {
+        super.time = time;
         this.lapInSecond = lapInSecond;
         this.amountLap = amountLap;
     }
 
 
-
-    @Override
-    public SportType getSportType() {
-        return getSportType();
-    }
-
     @Override
     public boolean run() {
         System.out.println("Time: " + time + ", Lap in second: " + lapInSecond + ", Amount lap: " + amountLap);
-        return false;
+        System.out.println("Успеет ли (имя) за " + time + "сек.");
+        int result1 = lapInSecond * amountLap;
+        if (result1 <= time) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    @Override
+    public SportType getSportType() {
+        return SportType.CIRCLE_RUNNER;
     }
 
 
 }
-
-
-
-
