@@ -4,12 +4,15 @@ public class LongRangeJumpRunner extends LongRangeRunner implements Jump {
     protected int amountBarriers;
 
 
-    public LongRangeJumpRunner(int time, int meterInSecond, int longRangeInMeter) {
+    public LongRangeJumpRunner(int time, int meterInSecond, int longRangeInMeter,int barrierInSecond, int amountBarriers) {
         super(time, meterInSecond, longRangeInMeter);
+        this.barrierInSecond = barrierInSecond;
+        this.amountBarriers = amountBarriers;
 
     }
 
     public boolean run() {
+        System.out.println("Бежим");
     return true;
     }
 
