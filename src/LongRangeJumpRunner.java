@@ -11,11 +11,10 @@ public class LongRangeJumpRunner extends LongRangeRunner implements Jump {
 
     }
 
-    public boolean run() {
-        System.out.println("Бежим");
-    return true;
-    }
 
+    public boolean run() {
+        return super.run();
+    }
 
     @Override
     public boolean jump() {
